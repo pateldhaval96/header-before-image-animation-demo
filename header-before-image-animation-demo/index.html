@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  header {
+  	position: relative;
+    z-index: 999;
+    width: 100%;
+    transition: .5s;
+    padding: 0px 0px;
+    /*height: 85px;*/
+    /*display: flex;*/
+    align-items: center;
+  }
+  header:before {
+  	background-image: url(image/animation-img.png);
+    background-position: center 1px;
+    background-color: transparent;
+    background-attachment: scroll;
+    background-repeat: repeat-x;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -33px;
+    left: 0;
+    right: 0;
+    height: 35px;
+    width: 100%;
+    content: "";
+    z-index: 6;
+    display: inline-block;
+    animation: animatedBackground 40s linear infinite;
+    -ms-animation: animatedBackground 40s linear infinite;
+    -moz-animation: animatedBackground 40s linear infinite;
+    -webkit-animation: animatedBackground 40s linear infinite;
+}
+ @keyframes animatedBackground {
+
+    from {
+
+        background-position: 0 0;
+
+    }
+
+    to {
+
+        background-position: 100% 0;
+
+    }
+
+}
+
+@-webkit-keyframes animatedBackground {
+
+    from {
+
+        background-position: 0 0;
+
+    }
+
+    to {
+
+        background-position: 100% 0;
+
+    }
+
+}
+
+@-o-keyframes animatedBackground {
+
+    from {
+
+        background-position: 0 0;
+
+    }
+
+    to {
+
+        background-position: 100% 0;
+
+    }
+
+}
+
+@-moz-keyframes animatedBackground {
+
+    from {
+
+        background-position: 0 0;
+
+    }
+
+    to {
+
+        background-position: 100% 0;
+
+    }
+
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+header:before {
+  
+    animation: animatedBackground 10s linear infinite;
+    -ms-animation: animatedBackground 10s linear infinite;
+    -moz-animation: animatedBackground 10s linear infinite;
+    -webkit-animation: animatedBackground 10s linear infinite;
+}
+}
+
+
+
+  </style>
+</head>
+<body>
+<header>
+	<!-- <div class="container-fluid"> -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- </div> -->
+</header>
+
+<div class="slider-main-div">
+	<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/desktopbannerimg1.jpg" alt="Los Angeles" >
+    </div>
+    <div class="carousel-item">
+      <img src="image/desktopbannerimg2.jpg" alt="Chicago" >
+    </div>
+    <div class="carousel-item">
+      <img src="image/desktopbannerimg3.jpg" alt="New York" >
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+</body>
+</html>
